@@ -11,11 +11,11 @@
 
             foreach (var line in input)
             {
-                var numbers = line.Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                var levels = line.Split(" ", StringSplitOptions.RemoveEmptyEntries)
                                   .Select(int.Parse)
                                   .ToList();
 
-                report.Add(numbers, false);
+                report.Add(levels, false);
             }
 
             foreach (var key in report.Keys.ToList())
